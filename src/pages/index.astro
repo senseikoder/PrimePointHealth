@@ -1,16 +1,49 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Icons from "../components/Icons.astro";
+import Mission from "../components/Mission.astro";
+import Aproach from "../components/Aproach.astro";
+import WhyUs from "../components/WhyUs.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+   <Nav />
+
+   <main>
+      <section class="pt-32 pb-20 bg-navy-900 text-center px-6">
+         <div class="max-w-4xl mx-auto">
+            <h1
+               class="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight"
+            >
+               Welcome to <br>PrimePoint Health
+            </h1>
+            <p
+               class="text-white/60 text-lg md:text-xl max-w-4xl mx-auto mb-16 leading-relaxed"
+            >
+               PrimePoint Health is a strategic healthcare consulting firm dedicated to driving transformative improvements in health organizations. We partner with healthcare providers, payers, and public agencies to navigate complex challenges and achieve sustainable, mission-driven results. Our team combines deep industry expertise with innovative thinking to help you deliver better care, improve outcomes, and optimize performance.
+            </p>
+            <div
+               class="relative w-full max-w-5xl mx-auto mt-12 rounded-xl overflow-hidden shadow-2xl"
+            >
+               <img
+                  alt="Modern healthcare professionals working"
+                  class="w-full h-auto object-cover aspect-video"
+                  src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
+               />
+            </div>
+         </div>
+      </section>
+
+
+      <Icons />
+      <Mission />
+      <Aproach />
+      <WhyUs />
+
+   </main>
+
+
+   <Footer />
+</Layout>

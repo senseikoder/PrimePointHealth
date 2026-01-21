@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>HealthConsult - Transforming Healthcare Delivery</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8fc148", // Vibrant Lime Green
+                        "background-light": "#ffffff",
+                        "background-dark": "#09263e", // Deep Navy Blue
+                        navy: {
+                            900: "#09263e",
+                            800: "#0d3455",
+                            700: "#12436d",
+                        }
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "4px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .header-gradient {
+            background: linear-gradient(to bottom, #09263e 85%, #ffffff 85%);
+        }
+
+        .dark .header-gradient {
+            background: #09263e;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-navy-900 dark:text-white transition-colors duration-300">
+    <nav class="fixed w-full z-50 bg-navy-900/90 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-primary material-icons-outlined text-3xl">health_and_safety</span>
+                <span class="text-white font-extrabold text-2xl tracking-tighter uppercase">HealthConsult</span>
+            </div>
+            <div
+                class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-white/80">
+                <a class="hover:text-primary transition-colors" href="#">Home</a>
+                <a class="hover:text-primary transition-colors" href="#">Services</a>
+                <a class="hover:text-primary transition-colors" href="#">Projects</a>
+                <a class="hover:text-primary transition-colors" href="#">Pricing</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="hidden sm:flex items-center text-white/60 text-xs border border-white/20 px-3 py-1 rounded">
+                    <span class="material-icons-outlined text-sm mr-1">language</span> EN
+                </div>
+                <button
+                    class="bg-primary hover:bg-opacity-90 text-navy-900 font-bold px-6 py-2 rounded text-xs uppercase tracking-widest transition-all">
+                    Get Started
+                </button>
+                <button class="text-white">
+                    <span class="material-icons-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="pt-32 pb-20 bg-navy-900 text-center px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight">
+                Transforming <br /> Healthcare Delivery
+            </h1>
+            <p class="text-white/60 text-lg md:text-xl max-w-2xl mx-auto mb-16 leading-relaxed">
+                We are a premier healthcare consultancy helping medical institutions develop immersive and
+                patient-centric experiences that drive operational excellence.
+            </p>
+            <div class="relative w-full max-w-5xl mx-auto mt-12 rounded-xl overflow-hidden shadow-2xl">
+                <img alt="Modern healthcare professionals working" class="w-full h-auto object-cover aspect-video"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEdsREJWp4fHcObz6H5Qrfu6kxgbLEmhXoC_MfLilr5CQGakp47SAOre-3-H5bvHc-y7C_mjOrB2iE6x48gHNVda4CJoVhWXzfWqJTcp0Jqo4pFAe5qmDNVjSfS0Ij7naAS53TNhgzwZdH_5JfOdbE_SOeT_qeo3E0G3_lXT_DnPA6tGXEiU74jy6sb_aZZtJ_s12quwmRDrE3MIcNywYB8NAxPoDF7UVZMKj0be7SJMpNJLbmLId_X9i-SJhMczO0GbS170HqYpls" />
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="py-24 bg-gray-50 dark:bg-navy-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="group cursor-pointer">
+                    <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+                        <img alt="Hospital Corridor Modern"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3SXuBXYDQjmofQSVO2daCeFiDwZ3yMWORJlxJxkpDvimHzCtRjc-VhCdzPAWUYS6vqbmvXm--I_UgPi_iDaid1cIqnACxHq0OKhLS8Wr9Ux4PEldCsxJoS5XAInQCyZYtt2A8NKC35MZkgiph1Nq8IIKjnNmohlSrNLskPMMvuEP4TWlXRABzD-rvztoq7yAhpslE8T8qGECItDTkT36aUsf7T22foXof9cx3GAXi2A4rhe3FvdaEhcxbQkx7Gs4u89pRbrrARZsy" />
+                    </div>
+                    <h4 class="text-2xl font-extrabold mb-2 dark:text-white">St. Jude Regional Digital Overhaul</h4>
+                    <p class="text-sm text-navy-900/60 dark:text-white/60 uppercase tracking-widest font-semibold">IT
+                        Systems / Strategy / UX</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+                        <img alt="Modern Medical Lab"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBryUaokEZMYuTomGteNHty4PcBPw8Hxo4v_YUtXgYmypp3UHcrjCxof8hXy9bWufpJLmCii1LB6hfE5T_DSS2zNwn1vNaBBLWUpZqHxlaF9ocbB41O15ZVONfZUTROmjYeWspjzz7uNP5qNFuc2-S_y61LFG4iUZBKQ90yjuEyLfDYc5PUDjg1iNTHG4JhDot7smDlKRB0PhMtrhfEp9-jrG-oC7gtrfZC0RiB3yJ0CmyuRPGlb5NFs78AaL93Rnlr3nk1irxQune3" />
+                    </div>
+                    <h4 class="text-2xl font-extrabold mb-2 dark:text-white">BioTech Innovation Hub Design</h4>
+                    <p class="text-sm text-navy-900/60 dark:text-white/60 uppercase tracking-widest font-semibold">
+                        Architecture / Research / Flow</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+                        <img alt="Modern Patient Room"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy_QeSjsd48cgnRonN0RGKElrMrK7qkyqJ2YmTjZh67zKcQn1gYZAbENR1pTfGgMj1QNzmLxtz2alKpw5Iu_iRivu8MYAUwX8MABp05WGts0I2XGxA4rQgfvWSjIAJZir89hwBmmByrkDMoTNrqaq1SnlxMeAqG2ErxD1sMOWzHMBpDK2uomjBtIcyyhGM57cScanWMK_02r4WNKPJ5PdYLIYyuBYGqwkc_bu0XhmSJ9n_893FTolmUyIRCAoG_i4M_KTT4eF8SKuy" />
+                    </div>
+                    <h4 class="text-2xl font-extrabold mb-2 dark:text-white">Patient-Centric Care Integration</h4>
+                    <p class="text-sm text-navy-900/60 dark:text-white/60 uppercase tracking-widest font-semibold">
+                        Patient Experience / Training</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="aspect-[4/3] overflow-hidden rounded-lg mb-6">
+                        <img alt="Surgical Center"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj6YsBhR1O84xbYXj8EnqHDIKiTClkIQXSONZPl7kZvW1xooinvlHkS9k4C15sNvgHAFXFfZ_iNTu9jhu2S0CYS210ASP1MNZG8mvEH8IBrPLKBl_2RBAqhEBOdTs3Q1vnO6teXcReSN83sRAqHle7meSYPtkGgnjD1XbYLXtSuZbCvN2ypBuMUl2xMatSUPPW7pg6M7ohYwLyt3hrYHYNX81vEkMqfZ6F56FpDnrnq2cfpHcIs_l8IiXiJIyDBYrETKnzP2hePC26" />
+                    </div>
+                    <h4 class="text-2xl font-extrabold mb-2 dark:text-white">Surgical Center Efficiency Audit</h4>
+                    <p class="text-sm text-navy-900/60 dark:text-white/60 uppercase tracking-widest font-semibold">
+                        Compliance / Logistics / Safety</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-navy-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 dark:bg-navy-800 p-10 rounded-lg flex flex-col h-full">
+                    <h5 class="text-xl font-bold mb-6 dark:text-white">Advisory</h5>
+                    <div class="flex items-baseline mb-8">
+                        <span class="text-4xl font-extrabold dark:text-white">$1,500</span>
+                        <span class="text-navy-900/40 dark:text-white/40 font-medium ml-1">/mo</span>
+                    </div>
+                    <p class="text-sm text-navy-900/60 dark:text-white/60 mb-8 leading-relaxed">Perfect for independent
+                        clinics looking for strategic guidance.</p>
+                    <ul class="space-y-4 mb-12 flex-grow">
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Monthly
+                            Strategy Call
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Basic
+                            Compliance Review
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Resource
+                            Toolkit
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-4 bg-navy-900 dark:bg-white dark:text-navy-900 text-white font-bold uppercase tracking-widest text-xs rounded hover:bg-opacity-90 transition-all">Get
+                        Started</button>
+                </div>
+                <div
+                    class="bg-gray-50 dark:bg-navy-800 p-10 rounded-lg flex flex-col h-full border-2 border-primary relative">
+                    <span
+                        class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-navy-900 text-[10px] font-black px-3 py-1 rounded uppercase tracking-tighter">Most
+                        Popular</span>
+                    <h5 class="text-xl font-bold mb-6 dark:text-white">Growth</h5>
+                    <div class="flex items-baseline mb-8">
+                        <span class="text-4xl font-extrabold dark:text-white">$4,800</span>
+                        <span class="text-navy-900/40 dark:text-white/40 font-medium ml-1">/mo</span>
+                    </div>
+                    <p class="text-sm text-navy-900/60 dark:text-white/60 mb-8 leading-relaxed">Comprehensive support
+                        for expanding medical groups.</p>
+                    <ul class="space-y-4 mb-12 flex-grow">
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Weekly Advisory
+                            Sessions
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Full IT
+                            Integration Support
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Satisfaction
+                            Benchmarking
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Regulatory
+                            Audit Prep
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-4 bg-primary text-navy-900 font-bold uppercase tracking-widest text-xs rounded hover:bg-opacity-90 transition-all">Get
+                        Started</button>
+                </div>
+                <div class="bg-gray-50 dark:bg-navy-800 p-10 rounded-lg flex flex-col h-full">
+                    <h5 class="text-xl font-bold mb-6 dark:text-white">Enterprise</h5>
+                    <div class="flex items-baseline mb-8">
+                        <span class="text-4xl font-extrabold dark:text-white">$9,500</span>
+                        <span class="text-navy-900/40 dark:text-white/40 font-medium ml-1">/mo</span>
+                    </div>
+                    <p class="text-sm text-navy-900/60 dark:text-white/60 mb-8 leading-relaxed">Full-scale consulting
+                        for hospital systems and healthcare networks.</p>
+                    <ul class="space-y-4 mb-12 flex-grow">
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Dedicated
+                            Consultant Team
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Custom Digital
+                            Ecosystems
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> Global Standard
+                            Compliance
+                        </li>
+                        <li class="flex items-center text-sm font-medium dark:text-white/80">
+                            <span class="material-icons-outlined text-primary text-sm mr-2">check</span> 24/7 Strategic
+                            Support
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-4 bg-navy-900 dark:bg-white dark:text-navy-900 text-white font-bold uppercase tracking-widest text-xs rounded hover:bg-opacity-90 transition-all">Contact
+                        Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary text-navy-900 pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="text-6xl font-extrabold mb-8">Let’s Improve <br /> Care Together</h2>
+                    <p class="text-navy-900/80 max-w-md mb-12 font-medium">
+                        Our healthcare consultants are ready to help your facility achieve its full potential in patient
+                        care and operational efficiency.
+                    </p>
+                    <div class="space-y-4">
+                        <p class="text-xs uppercase tracking-widest font-bold">Follow Our Impact</p>
+                        <div class="flex gap-4">
+                            <a class="hover:opacity-70 transition-opacity" href="#"><span
+                                    class="material-icons-outlined">facebook</span></a>
+                            <a class="hover:opacity-70 transition-opacity" href="#"><span
+                                    class="material-icons-outlined">alternate_email</span></a>
+                            <a class="hover:opacity-70 transition-opacity" href="#"><span
+                                    class="material-icons-outlined">link</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-navy-900 p-8 md:p-12 rounded-sm text-white">
+                    <form class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="border-b border-white/20 pb-2">
+                                <label
+                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Full
+                                    Name *</label>
+                                <input
+                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20"
+                                    placeholder="John Smith" type="text" />
+                            </div>
+                            <div class="border-b border-white/20 pb-2">
+                                <label
+                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Email
+                                    Address *</label>
+                                <input
+                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20"
+                                    placeholder="john@hospital.org" type="email" />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="border-b border-white/20 pb-2">
+                                <label
+                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Organization
+                                    *</label>
+                                <input
+                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20"
+                                    placeholder="Medical Center Name" type="text" />
+                            </div>
+                            <div class="border-b border-white/20 pb-2">
+                                <label
+                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Inquiry
+                                    Type</label>
+                                <select
+                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white appearance-none">
+                                    <option class="text-navy-900">Clinical Strategy</option>
+                                    <option class="text-navy-900">IT Solutions</option>
+                                    <option class="text-navy-900">Facility Design</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="border-b border-white/20 pb-2">
+                            <label class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">How
+                                can we help you? *</label>
+                            <textarea
+                                class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20 resize-none"
+                                placeholder="Tell us about your project..." rows="4"></textarea>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <input class="mt-1 rounded border-white/20 bg-transparent text-primary focus:ring-primary"
+                                id="terms" type="checkbox" />
+                            <label class="text-xs text-white/60 leading-relaxed" for="terms">I agree to the terms and
+                                conditions and privacy policy. We protect your medical organization's data.</label>
+                        </div>
+                        <button
+                            class="bg-primary text-navy-900 font-extrabold uppercase tracking-widest px-10 py-4 rounded-sm hover:brightness-110 transition-all text-xs"
+                            type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div
+                class="mt-24 pt-8 border-t border-navy-900/10 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest font-bold">
+                <div class="flex flex-col md:flex-row gap-8 text-center md:text-left">
+                    <span>27 Medical Row, New York, NY 10001, USA</span>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8 mt-4 md:mt-0 text-center md:text-right">
+                    <span>+1 800 555 1234</span>
+                    <span>CONTACT@HEALTHCONSULT.AGENCY</span>
+                </div>
+            </div>
+            <div class="mt-12 text-center text-[8px] uppercase tracking-widest opacity-40">
+                © 2024 HealthConsult Agency. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

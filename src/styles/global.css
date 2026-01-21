@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+   --color-primary: #8fc148;
+   --color-background-light: #ffffff;
+   --color-background-dark: #09263e;
+   --color-navy-900: #09263e;
+   --color-navy-800: #0d3455;
+   --color-navy-700: #12436d;
+
+   --font-display: "Inter", "sans-serif";
+   --font-sans: "Inter", "sans-serif";
+
+   --radius-default: 4px;
+}
+
+@layer base {
+   body {
+      font-family: var(--font-sans);
+   }
+}
+
+.header-gradient {
+   background: linear-gradient(to bottom, #09263e 85%, #ffffff 85%);
+}
+
+.dark .header-gradient {
+   background: #09263e;
+}
