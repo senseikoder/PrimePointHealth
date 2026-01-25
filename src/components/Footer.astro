@@ -1,11 +1,17 @@
-<footer class="bg-primary text-navy-900 pt-24 pb-12">
+---
+import Image from "astro/components/Image.astro"
+import logoFooter from "../images/PrimePoint_Health_logo_footer.webp"
+---
+
+<footer class="bg-primary text-navy-900 pt-24 pb-12" id="contact">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
                 <div>
-                    <h2 class="text-6xl font-extrabold mb-8">Let’s Improve <br /> Care Together</h2>
-                    <p class="text-navy-900/80 max-w-md mb-12 font-medium">
-                        Our healthcare consultants are ready to help your facility achieve its full potential in patient
-                        care and operational efficiency.
+                    <Image src={logoFooter} alt="PrimePoint Health Logo" width={400} height={211} />
+
+                
+                    <p class="text-navy-900/80 max-w-md mb-8 leading-relaxed">
+                        Ready to drive meaningful change in your organization? Let's start the conversation. We welcome inquiries from health system executives, medical group leaders, payers, policymakers, and other industry partners who are looking for guidance and results.
                     </p>
                     <div class="space-y-4">
                         <p class="text-xs uppercase tracking-widest font-bold">Follow Our Impact</p>
@@ -18,79 +24,66 @@
                                     class="material-icons-outlined">link</span></a>
                         </div>
                     </div>
+
                 </div>
-                <div class="bg-navy-900 p-8 md:p-12 rounded-sm text-white">
-                    <form class="space-y-8">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="border-b border-white/20 pb-2">
-                                <label
-                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Full
-                                    Name *</label>
-                                <input
-                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20"
-                                    placeholder="John Smith" type="text" />
+                <div>
+                    <h3 class="text-2xl font-bold text-navy-900 mb-6">Get in Touch</h3>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-navy-900 rounded-full flex items-center justify-center shrink-0">
+                                <span class="material-icons-outlined text-primary">email</span>
                             </div>
-                            <div class="border-b border-white/20 pb-2">
-                                <label
-                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Email
-                                    Address *</label>
-                                <input
-                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20"
-                                    placeholder="john@hospital.org" type="email" />
+                            <div>
+                                <p class="text-sm font-bold uppercase tracking-widest text-navy-900/60 mb-1">Email</p>
+                                <p class="text-lg text-navy-900 font-medium">info@primepointhealth.com</p>
                             </div>
                         </div>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div class="border-b border-white/20 pb-2">
-                                <label
-                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Organization
-                                    *</label>
-                                <input
-                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20"
-                                    placeholder="Medical Center Name" type="text" />
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-navy-900 rounded-full flex items-center justify-center shrink-0">
+                                <span class="material-icons-outlined text-primary">phone</span>
                             </div>
-                            <div class="border-b border-white/20 pb-2">
-                                <label
-                                    class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">Inquiry
-                                    Type</label>
-                                <select
-                                    class="w-full bg-transparent border-none p-0 focus:ring-0 text-white appearance-none">
-                                    <option class="text-navy-900">Clinical Strategy</option>
-                                    <option class="text-navy-900">IT Solutions</option>
-                                    <option class="text-navy-900">Facility Design</option>
-                                </select>
+                            <div>
+                                <p class="text-sm font-bold uppercase tracking-widest text-navy-900/60 mb-1">Phone</p>
+                                <p class="text-lg text-navy-900 font-medium">(617) 970-8519</p>
                             </div>
                         </div>
-                        <div class="border-b border-white/20 pb-2">
-                            <label class="block text-[10px] uppercase tracking-widest font-bold mb-2 text-white/40">How
-                                can we help you? *</label>
-                            <textarea
-                                class="w-full bg-transparent border-none p-0 focus:ring-0 text-white placeholder-white/20 resize-none"
-                                placeholder="Tell us about your project..." rows="4"></textarea>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-navy-900 rounded-full flex items-center justify-center shrink-0">
+                                <span class="material-icons-outlined text-primary">location_on</span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold uppercase tracking-widest text-navy-900/60 mb-1">Location</p>
+                                <p class="text-lg text-navy-900 font-medium">Based in Massachusetts, serving clients nationwide.</p>
+                            </div>
                         </div>
-                        <div class="flex items-start gap-3">
-                            <input class="mt-1 rounded border-white/20 bg-transparent text-primary focus:ring-primary"
-                                id="terms" type="checkbox" />
-                            <label class="text-xs text-white/60 leading-relaxed" for="terms">I agree to the terms and
-                                conditions and privacy policy. We protect your medical organization's data.</label>
-                        </div>
-                        <button
-                            class="bg-primary text-navy-900 font-extrabold uppercase tracking-widest px-10 py-4 rounded-sm hover:brightness-110 transition-all text-xs"
-                            type="submit">Send Message</button>
-                    </form>
+                    </div>
+
+                    <div class="space-y-4">
+                        <p class="text-navy-900/80 leading-relaxed">
+                            We will respond promptly to discuss your needs and explore how PrimePoint Health can help advance your strategic goals. Whether you have a specific project in mind or just want to learn more about our services, we are here to assist.
+                        </p>
+                        
+                        <p class="text-navy-900/80 leading-relaxed">
+                            Let us partner with you to unlock new possibilities in healthcare excellence. Together, we can make healthcare better for organizations, patients, and communities. We look forward to hearing from you.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div
                 class="mt-24 pt-8 border-t border-navy-900/10 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest font-bold">
                 <div class="flex flex-col md:flex-row gap-8 text-center md:text-left">
-                    <span>27 Medical Row, New York, NY 10001, USA</span>
+                    <span>Based in Massachusetts, serving clients nationwide</span>
                 </div>
                 <div class="flex flex-col md:flex-row gap-8 mt-4 md:mt-0 text-center md:text-right">
-                    <span>+1 800 555 1234</span>
-                    <span>CONTACT@HEALTHCONSULT.AGENCY</span>
+                    <span>(617) 970-8519</span>
+                    <span>info@primepointhealth.com</span>
                 </div>
             </div>
             <div class="mt-12 text-center text-[8px] uppercase tracking-widest opacity-40">
-                © 2024 HealthConsult Agency. All Rights Reserved.
+                © 2024 PrimePoint Health. All Rights Reserved.
             </div>
         </div>
     </footer>

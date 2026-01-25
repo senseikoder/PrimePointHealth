@@ -1,37 +1,32 @@
+---
+import Image from "astro/components/Image.astro"
+import primePointLogo from "../images/prime-point-logo-head.fw.webp"
+---
+
 <nav
-      class="fixed w-full z-50 bg-navy-900/90 backdrop-blur-md border-b border-white/10 px-6 py-4"
+      class="fixed w-full z-50 bg-white backdrop-blur-md border-b border-gray-300/70 px-6 py-4"
    >
       <div class="max-w-7xl mx-auto flex justify-between items-center">
          <div class="flex items-center gap-2">
-            <span class="text-primary material-icons-outlined text-3xl"
-               >health_and_safety</span
-            >
-            <span
-               class="text-white font-extrabold text-2xl tracking-tighter uppercase"
-               >HealthConsult</span
-            >
+            <Image src={primePointLogo} alt="PrimePoint Health" width="350" />
          </div>
          <div
-            class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-white/80"
+            class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-navy-900"
          >
-            <a class="hover:text-primary transition-colors" href="#">Home</a>
-            <a class="hover:text-primary transition-colors" href="#">Services</a
+            <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+            <a class="hover:text-primary transition-colors" href="services.html">Services</a
             >
-            <a class="hover:text-primary transition-colors" href="#">Projects</a
+            <a class="hover:text-primary transition-colors" href="about.html">About Us</a
             >
-            <a class="hover:text-primary transition-colors" href="#">Pricing</a>
+            <a class="hover:text-primary transition-colors" href="our-thinking.html">Our Thinking</a>
+            <a class="hover:text-primary transition-colors" href="#contact">Contact</a>
          </div>
          <div class="flex items-center gap-4">
-            <div
-               class="hidden sm:flex items-center text-white/60 text-xs border border-white/20 px-3 py-1 rounded"
-            >
-               <span class="material-icons-outlined text-sm mr-1">language</span
-               > EN
-            </div>
+
             <button
                class="bg-primary hover:bg-opacity-90 text-navy-900 font-bold px-6 py-2 rounded text-xs uppercase tracking-widest transition-all"
             >
-               Get Started
+               <a href="#contact">Get Started</a>
             </button>
             <button class="text-white md:hidden">
                <span class="material-icons-outlined">menu</span>

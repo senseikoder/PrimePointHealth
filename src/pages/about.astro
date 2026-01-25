@@ -1,0 +1,349 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+import gregWilmot from "../images/greg-wilmot.webp";
+
+---
+
+<Layout>
+  <Nav />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="py-32 pt-48 px-4 bg-navy-900 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-normal">
+          About PrimePointHealth <br>
+          <span class="text-primary">Who We Are</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Our Vision Section -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-8">Our Vision</h2>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          At PrimePoint Health, we envision a healthcare industry that is
+          innovative, equitable, and sustainable. We are driven by a passion to
+          help organizations deliver exceptional care while adapting to change.
+          Our role is to serve as trusted advisors and partners on your journey
+          toward excellence, bringing an outside perspective informed by insider
+          experience.
+        </p>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="py-20 pb-4 bg-white">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-16">
+          Leadership
+        </h2>
+        <p class="text-center text-lg text-navy-900/60 mb-12">
+          PrimePoint Health is led by Greg Wilmot, an accomplished healthcare
+          executive with over 25 years of experience across healthcare spectrum.
+          Greg founded PrimePoint Health to share his strategic leadership
+          expertise with organizations striving to improve and grow. His
+          background includes:
+        </p>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="space-y-0">
+          <div
+            class="group border-t border-navy-900/10 py-8 flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-gray-50 transition-colors px-4"
+          >
+            <div class="flex items-center gap-8">
+              <span class="text-sm font-bold text-navy-900/40">⚫</span>
+              <h3 class="text-2xl font-bold">
+                President & CEO of NeighborHealth
+              </h3>
+            </div>
+            <div class="mt-4 md:mt-0 max-w-sm text-sm text-navy-900/60">
+              Led Massachusetts's largest community health center, serving
+              120,000+ patients, and achieved national recognition for quality
+              and innovation.
+            </div>
+            <span
+              class="hidden md:block material-icons-outlined text-navy-900/20 group-hover:text-primary transition-colors"
+              >north_east</span
+            >
+          </div>
+          <div
+            class="group border-t border-navy-900/10 py-8 flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-gray-50 transition-colors px-4"
+          >
+            <div class="flex items-center gap-8">
+              <span class="text-sm font-bold text-navy-900/40">⚫</span>
+              <h3 class="text-2xl font-bold">Senior Advisor in Government</h3>
+            </div>
+            <div class="mt-4 md:mt-0 max-w-sm text-sm text-navy-900/60">
+              Drove strategy and performance initiatives at Massachusetts
+              Executive Office of Health & Human Services, coordinating policy
+              across 16 agencies.
+            </div>
+            <span
+              class="hidden md:block material-icons-outlined text-navy-900/20 group-hover:text-primary transition-colors"
+              >north_east</span
+            >
+          </div>
+          <div
+            class="group border-t border-navy-900/10 py-8 flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-gray-50 transition-colors px-4"
+          >
+            <div class="flex items-center gap-8">
+              <span class="text-sm font-bold text-navy-900/40">⚫</span>
+              <h3 class="text-2xl font-bold">
+                Leadership in Health Systems & Insurance
+              </h3>
+            </div>
+            <div class="mt-4 md:mt-0 max-w-sm text-sm text-navy-900/60">
+              Held key leadership roles at a major health system and state's
+              largest health plan, focusing on innovation, accountable care,
+              risk management, and business development.
+            </div>
+            <span
+              class="hidden md:block material-icons-outlined text-navy-900/20 group-hover:text-primary transition-colors"
+              >north_east</span
+            >
+          </div>
+          <div
+            class="group border-t border-navy-900/10 py-8 flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-gray-50 transition-colors px-4"
+          >
+            <div class="flex items-center gap-8">
+              <span class="text-sm font-bold text-navy-900/40">⚫</span>
+              <h3 class="text-2xl font-bold">Industry Recognition</h3>
+            </div>
+            <div class="mt-4 md:mt-0 max-w-sm text-sm text-navy-900/60">
+              Honored as a Top Healthcare Leader (Boston Business Journal's "40
+              Under 40", "Power 50 – Movement Maker", "Innovator in Healthcare",
+              Becker's "Top Community Hospital CEOs to Know", Modern
+              Healthcare's "Top 25 Diversity Leaders", among others) for
+              visionary leadership and community impact.
+            </div>
+            <span
+              class="hidden md:block material-icons-outlined text-navy-900/20 group-hover:text-primary transition-colors"
+              >north_east</span
+            >
+          </div>
+          <div
+            class="group border-t border-navy-900/10 py-8 flex flex-col md:flex-row items-start md:items-center justify-between hover:bg-gray-50 transition-colors px-4"
+          >
+            <div class="flex items-center gap-8">
+              <span class="text-sm font-bold text-navy-900/40">⚫</span>
+              <h3 class="text-2xl font-bold">Commitment to Community</h3>
+            </div>
+            <div class="mt-4 md:mt-0 max-w-sm text-sm text-navy-900/60">
+              Served on various national and local non-profit health and human
+              services organizations, including Boston's Public Health
+              Commission, Boston Medical Center's Board of Trustees, and various
+              other high-performing organizations committed to improving overall
+              health and wellness of families and communities.
+            </div>
+            <span
+              class="hidden md:block material-icons-outlined text-navy-900/20 group-hover:text-primary transition-colors"
+              >north_east</span
+            >
+          </div>
+          <div class="border-t border-navy-900/10"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto my-12">
+          <div
+            class="bg-gray-50 border border-navy-900/10 rounded-sm px-6 py-8 mb-12"
+          >
+            <h3 class="text-2xl font-bold text-navy-900 mb-3">Greg Wilmot</h3>
+            <p
+              class="text-sm font-bold uppercase tracking-widest text-navy-900/40 mb-4"
+            >
+              Founder & CEO
+            </p>
+            <p class="text-sm text-navy-900/60">
+              Greg's broad experience – spanning hospitals, health plans,
+              government, and community health – gives PrimePoint Health a 360°
+              perspective on healthcare challenges. Under his leadership, our
+              team combines strategic insight with operational know-how to
+              deliver results for our clients.
+            </p>
+
+            <div class="mt-6 rounded-lg overflow-hidden">
+              <Image src={gregWilmot} alt="Greg Wilmot" class="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-extrabold text-gray-900 mb-8">Our Values</h2>
+          <p class="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+            Our work is grounded in a set of core values that guide everything
+            we do:
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- Value 1 -->
+          <div class="text-center space-y-4">
+            <div
+              class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-10 h-10 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We uphold the highest ethical standards, providing candid advice
+              and acting in the best interests of our clients and their
+              communities.
+            </p>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="text-center space-y-4">
+            <div
+              class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-10 h-10 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Collaboration</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We believe in working with our clients, not just for them. Lasting
+              change happens through partnership, active listening, and
+              co-creation.
+            </p>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="text-center space-y-4">
+            <div
+              class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-10 h-10 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Innovation</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We constantly seek better ways to solve problems, encouraging
+              creative thinking and embracing new approaches to healthcare's
+              toughest challenges.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid lg:grid-cols-2 gap-8 justify-center max-w-2xl mx-auto mt-12"
+        >
+          <!-- Value 4 -->
+          <div class="text-center space-y-4">
+            <div
+              class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-10 h-10 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Equity</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We are committed to advancing health equity. Every strategy we
+              recommend aims to improve access, outcomes, and fairness for all
+              populations.
+            </p>
+          </div>
+
+          <!-- Value 5 -->
+          <div class="text-center space-y-4">
+            <div
+              class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <svg
+                class="w-10 h-10 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">Excellence</h3>
+            <p class="text-gray-600 leading-relaxed">
+              We strive for quality and excellence in our deliverables,
+              analysis, and recommendations – focused on achieving meaningful,
+              measurable impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Statement Section -->
+    <section class="py-20 px-4 bg-navy-900 text-center">
+      <div class="max-w-4xl mx-auto">
+        <p class="text-xl text-white/80 leading-relaxed mb-8">
+          When you work with PrimePoint Health, you gain a partner who shares
+          your mission and will go the extra mile to ensure success. Our
+          clients' goals become our goals, and we measure our achievements by
+          the improvements we help bring to life.
+        </p>
+        <a
+          href="#"
+          class="bg-primary text-navy-900 font-extrabold uppercase tracking-widest px-10 py-4 rounded-sm hover:brightness-110 transition-all text-xs inline-block"
+        >
+          Get Started
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

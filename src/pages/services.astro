@@ -1,0 +1,348 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+import image2 from "../images/health-consulting.webp";
+---
+
+<Layout>
+  <Nav />
+
+  <main>
+    <!-- Hero Section -->
+    <section class="py-32 pt-48 px-4 bg-navy-900 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-normal">
+          Our Services<br> <span class="text-primary">What We Do</span>
+        </h1>
+        <p class="text-xl text-white/60 leading-relaxed">
+          PrimePoint Health offers a comprehensive suite of consulting services
+          to meet the strategic and operational needs of healthcare
+          organizations. We work with executives and teams to drive improvement
+          in key areas critical to your success.
+        </p>
+      </div>
+    </section>
+
+    <!-- Strategic Planning Section -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
+            Strategic Planning & Transformation
+          </h2>
+          <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            We guide organizations through strategic planning, growth
+            initiatives, and transformation programs. Our team will help you
+            define a clear vision and roadmap:
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="border border-gray-300 rounded-xl p-6">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Enterprise Strategic Planning
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Craft multi-year plans aligning stakeholders, services, and
+              investments with your mission and market opportunities.
+            </p>
+          </div>
+          <div class="border border-gray-300 rounded-xl p-6">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Change Management
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Navigate mergers, reorganizations, or new program launches with
+              expert planning and execution support.
+            </p>
+          </div>
+          <div class="border border-gray-300 rounded-xl p-6">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Growth & Innovation
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Identify opportunities for expansion, partnerships, or innovation
+              that position your organization as a leader in the field.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operational Excellence Section -->
+    <section class="py-20 px-4 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <div
+          class="grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-12 items-center"
+        >
+          <div>
+            <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
+              Operational Excellence & Performance Improvement
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-8">
+              PrimePoint Health helps optimize operations to enhance quality,
+              efficiency, and financial sustainability:
+            </p>
+            <ul class="space-y-6">
+              <li class="flex gap-4">
+                <span class="material-icons-outlined text-primary font-bold"
+                  >check_circle</span
+                >
+                <div>
+                  <h4 class="font-bold text-lg">Process Improvement</h4>
+                  <p class="text-sm text-[#5c6870]">
+                    Streamline workflows and eliminate inefficiencies in
+                    clinical and administrative processes.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="material-icons-outlined text-primary font-bold"
+                  >check_circle</span
+                >
+                <div>
+                  <h4 class="font-bold text-lg">Performance Management</h4>
+                  <p class="text-sm text-[#5c6870]">
+                    Establish key performance indicators and dashboards to track
+                    progress and accountability.
+                  </p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="material-icons-outlined text-primary font-bold"
+                  >check_circle</span
+                >
+                <div>
+                  <h4 class="font-bold text-lg">Financial Optimization</h4>
+                  <p class="text-sm text-[#5c6870]">
+                    Improve cost management and revenue cycle processes without
+                    compromising care quality.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="rounded-2xl border border-gray-200 bg-white shadow-sm overflow-hidden"
+          >
+            <div
+              class="aspect-square w-full rounded-2xl overflow-hidden shadow-2xl bg-center bg-cover"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDw1B7WU_qZR44BtXO3Sqqk3gENCaX8WbGpP2fwucql--W-Nb0rgEPo0-KWXwonYZi1ELtUj4VfU1TI-fuURsBWr8OTF2WmIQuq209_uxbUKqtR-b3iDh_IXqlV9ge_ed7I0Jv4ofUVHua34qUYk7VB571xTV3_FfATCQxBpph0FjTUXGTmvG60pH81cxzVT1xi-mzp4MndOsg83YpPOupjKfLyZZv_rZrM-sVqc9hf714-Q1ceiYrnonunS6m3vpmhEALk1JSElgs-");'
+            >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovation & Partnerships Section -->
+    <section class="py-20 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-extrabold text-gray-900 mb-6">
+            Innovation & Partnerships
+          </h2>
+          <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            In a rapidly evolving healthcare landscape, innovation and
+            collaboration are key. We assist in:
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="p-8 rounded-2xl bg-slate-50 border-t-4 border-t-primary shadow-sm hover:shadow-md transition-all">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Value-Based Care Initiatives
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Design and implement value-based care models (such as ACOs or
+              population health programs) that improve outcomes and reduce
+              costs.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl bg-slate-50 border-t-4 border-t-primary shadow-sm hover:shadow-md transition-all">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Technology & Digital Health
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Integrate innovative technologies (telehealth, data analytics, EHR
+              optimizations) to modernize care delivery and decision-making.
+            </p>
+          </div>
+          <div class="p-8 rounded-2xl bg-slate-50 border-t-4 border-t-primary shadow-sm hover:shadow-md transition-all">
+            <div
+              class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <svg
+                class="w-8 h-8 text-blue-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Strategic Partnerships
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              Forge partnerships across providers, payers, community
+              organizations, and tech firms to expand services and reach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Health & Equity Section -->
+    <section class="py-24 px-4 md:px-10 bg-navy-900 text-white">
+        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row-reverse items-center gap-16">
+          <div class="flex-1 space-y-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold">Community Health &amp; Equity Programs</h2>
+            <p class="text-lg text-slate-300 leading-relaxed">
+              We believe that improving health outcomes goes hand-in-hand with advancing equity and community
+              engagement.
+            </p>
+            <div class="grid grid-cols-1 gap-6">
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                <span class="material-symbols-outlined text-primary">favorite</span>
+                <div>
+                  <h4 class="font-bold text-white">Health Equity Strategy</h4>
+                  <p class="text-sm text-slate-400">Develop programs to address disparities in care and ensure services
+                    are culturally responsive.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                <span class="material-symbols-outlined text-primary">location_city</span>
+                <div>
+                  <h4 class="font-bold text-white">Community Initiatives</h4>
+                  <p class="text-sm text-slate-400">Plan and evaluate health programs that extend your impact beyond
+                    clinic walls.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10">
+                <span class="material-symbols-outlined text-primary">handshake</span>
+                <div>
+                  <h4 class="font-bold text-white">Stakeholder Engagement</h4>
+                  <p class="text-sm text-slate-400">Enhance collaboration with patients, community leaders, and
+                    policymakers to build trust.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 w-full">
+            <div class="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl bg-center bg-cover"
+              style={`background-image: url("${image2.src}");`}>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Final Statement Section -->
+    <section class="py-20 px-4 bg-navy-800 text-center">
+      <div class="max-w-4xl mx-auto">
+        <p class="text-xl text-white/80 leading-relaxed mb-8">
+          Each service area is tailored to your organization's context. Whether
+          you're a hospital system seeking transformation or a public agency
+          tackling population health challenges, PrimePoint Health provides the
+          expertise and hands-on support to achieve your goals.
+        </p>
+        <a
+          href="#"
+          class="bg-white text-navy-900 font-extrabold uppercase tracking-widest px-10 py-4 rounded-sm hover:brightness-110 transition-all text-xs inline-block"
+        >
+          Get Started
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
