@@ -1,11 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
-import Icons from "../components/Icons.astro";
 import Mission from "../components/Mission.astro";
 import Aproach from "../components/Aproach.astro";
 import WhyUs from "../components/WhyUs.astro";
 import Footer from "../components/Footer.astro";
+import Image from "astro/components/Image.astro";
+
+import pph_main_pic from "../images/PPH_Main_photo.webp";
 ---
 
 <Layout>
@@ -27,17 +29,17 @@ import Footer from "../components/Footer.astro";
             <div
                class="relative w-full max-w-5xl mx-auto mt-12 rounded-xl overflow-hidden shadow-2xl"
             >
-               <img
-                  alt="Modern healthcare professionals working"
+               <Image
+                  alt="Modern healthcare consulting professionals"
                   class="w-full h-auto object-cover aspect-video"
-                  src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200"
+                  src={pph_main_pic}
+                  width={1200}
+                  height={600}
                />
             </div>
          </div>
       </section>
 
-
-      <Icons />
       <Mission />
       <Aproach />
       <WhyUs />

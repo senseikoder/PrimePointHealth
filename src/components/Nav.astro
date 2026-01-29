@@ -1,36 +1,133 @@
 ---
-import Image from "astro/components/Image.astro"
-import primePointLogo from "../images/prime-point-logo-head.fw.webp"
+import Image from "astro/components/Image.astro";
+import primePointLogo from "../images/prime-point-logo-head.fw.webp";
 ---
 
-<nav
-      class="fixed w-full z-50 bg-white backdrop-blur-md border-b border-gray-300/70 px-6 py-4"
-   >
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
-         <div class="flex items-center gap-2">
-            <Image src={primePointLogo} alt="PrimePoint Health" width="350" />
-         </div>
-         <div
-            class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-navy-900"
-         >
-            <a class="hover:text-primary transition-colors" href="/">Home</a>
-            <a class="hover:text-primary transition-colors" href="/services">Services</a
-            >
-            <a class="hover:text-primary transition-colors" href="/about">About Us</a
-            >
-            <a class="hover:text-primary transition-colors" href="/our-thinking">Our Thinking</a>
-            <a class="hover:text-primary transition-colors" href="#contact">Contact</a>
-         </div>
-         <div class="flex items-center gap-4">
+<script is:inline>
+  function toggleMenu() {
+    const menu = document.querySelector("#offcanvas-main");
+    if (menu) {
+      if (menu.classList.contains("hidden")) {
+        // Abrir menú - primero remover hidden, luego forzar reflow, luego remover translate-x-full
+        menu.classList.remove("hidden");
+        void menu.offsetWidth; // Forzar reflow
+        menu.classList.remove("translate-x-full");
+      } else {
+        // Cerrar menú - agregar translate-x-full primero, esperar animación, luego agregar hidden
+        menu.classList.add("translate-x-full");
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        }, 300);
+      }
+    }
+  }
+</script>
 
-            <button
-               class="bg-primary hover:bg-opacity-90 text-navy-900 font-bold px-6 py-2 rounded text-xs uppercase tracking-widest transition-all"
-            >
-               <a href="#contact">Get Started</a>
-            </button>
-            <button class="text-white md:hidden">
-               <span class="material-icons-outlined">menu</span>
-            </button>
-         </div>
+<nav
+  class="fixed w-full z-50 bg-white backdrop-blur-md border-b border-gray-300/70 px-6 py-4"
+>
+  <div class="max-w-7xl mx-auto flex justify-evenly items-center gap-6">
+    <div class="flex items-center gap-2">
+      <a href="/">
+        <Image src={primePointLogo} alt="PrimePoint Health" width="350" />
+      </a>
+    </div>
+    <div
+      class="hidden md:flex items-center space-x-8 text-sm font-medium uppercase tracking-widest text-navy-900"
+    >
+      <a class="hover:text-primary transition-colors" href="/">Home</a>
+      <a class="hover:text-primary transition-colors" href="/services">Services</a>
+      <a class="hover:text-primary transition-colors" href="/about">About Us</a>
+      <a class="hover:text-primary transition-colors" href="/our-thinking">Our Thinking</a>
+      <a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+    </div>
+    <div class="flex items-center gap-4">
+       <button class="md:hidden" onclick="toggleMenu()">
+         <span class="material-icons-outlined">menu</span>
+       </button>
+      <button
+        class="hidden md:block bg-primary hover:bg-primary/90 text-navy-900 font-bold px-6 py-3 rounded text-xs uppercase tracking-widest transition-all"
+      >
+        <a href="#contact">Get Started</a>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu -->
+  <div
+    id="offcanvas-main"
+    class="fixed z-50 h-full w-full transform bg-white transition-all duration-300 ease-in-out translate-x-full end-0 top-0 max-w-xl"
+    role="dialog"
+    aria-labelledby="offcanvas-main-label"
+  >
+    <div
+      class="text-navy-900 h-screen space-y-10 overflow-auto bg-linear-to-b/srgb from-navy-700 to-navy-900 to-60% px-8 pt-20 pb-5 md:px-16 md:pt-32 md:pb-10"
+    >
+      <button
+        type="button"
+        onclick="toggleMenu()"
+        title="Close offcanvas"
+        class="border-navy-900/20 text-navy-900 absolute end-7 top-5 z-20 inline-flex h-12 w-12 items-center justify-center gap-x-2 rounded-full border-2 bg-primary text-sm font-medium transition-all duration-500 ease-out"
+        aria-expanded="false"
+      >
+        <svg
+          stroke="white"
+          fill="white"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          class="text-2xl"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        ><path
+            d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"
+          ></path></svg
+        >
+      </button>
+      
+      <div class="space-y-6">
+        <a href="/" class="flex items-center gap-2 filter drop-shadow-xs">
+          <Image src={primePointLogo} alt="PrimePoint Health" width="280" />
+        </a>
+        
+        <div class="space-y-4 text-white">
+          <a href="/" class="block text-lg font-medium uppercase tracking-widest hover:text-primary transition-colors py-3">Home</a>
+          <a href="/services" class="block text-lg font-medium uppercase tracking-widest hover:text-primary transition-colors py-3">Services</a>
+          <a href="/about" class="block text-lg font-medium uppercase tracking-widest hover:text-primary transition-colors py-3">About Us</a>
+          <a href="/our-thinking" class="block text-lg font-medium uppercase tracking-widest hover:text-primary transition-colors py-3">Our Thinking</a>
+          <a href="#contact" class="block text-lg font-medium uppercase tracking-widest hover:text-primary transition-colors py-3">Contact</a>
+        </div>
+        
+        <div class="space-y-4 pt-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-navy-900 rounded-full flex items-center justify-center">
+              <span class="material-icons-outlined text-primary">email</span>
+            </div>
+            <div>
+              <p class="text-sm font-bold uppercase tracking-widest text-primary/60">Email</p>
+              <p class="text-primary font-medium"><a href="mailto:info@primepointhealth.com">info@primepointhealth.com</a></p>
+            </div>
+          </div>
+          
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-navy-900 rounded-full flex items-center justify-center">
+              <span class="material-icons-outlined text-primary">phone</span>
+            </div>
+            <div>
+              <p class="text-sm font-bold uppercase tracking-widest text-primary/60">Phone</p>
+              <p class="text-primary font-medium"><a href="tel:+16178025635">(617) 802-5635</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <button
+          class="w-full bg-primary hover:bg-primary/80 text-navy-900 font-bold px-6 py-4 rounded text-sm uppercase tracking-widest transition-all mt-6"
+          onclick="toggleMenu()"
+        >
+          <a href="#contact">Get Started</a>
+        </button>
       </div>
-   </nav>
+    </div>
+    <div id="offcanvas-main-label" class="sr-only">Offcanvas</div>
+  </div>
+</nav>
