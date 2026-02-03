@@ -4,9 +4,11 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import Image from "astro/components/Image.astro";
 import image2 from "../images/health-consulting.webp";
+const title = "Healthcare Consulting Services | Strategic Planning & Operations";
+const description = "Expert healthcare consulting services: strategic planning, operational excellence, value-based care, and health equity programs. Transform your organization with PrimePoint Health";
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <Nav />
 
   <main>

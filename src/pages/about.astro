@@ -4,10 +4,12 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import Image from "astro/components/Image.astro";
 import gregWilmot from "../images/greg-wilmot.webp";
+const title = "Who We Are | PrimePoint Health - Innovating Healthcare Strategy";
+const description = "We are a premier healthcare consultancy helping medical institutions develop immersive and patient-centric experiences.";
 
 ---
 
-<Layout>
+<Layout title={title} description={description}>
   <Nav />
 
   <main>
